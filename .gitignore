@@ -7,3 +7,13 @@ __pycache__/
 mlruns/
 *.log
 screenshots/
+# MLflow local files
+mlflow.db
+mlflow_error.txt
+mlruns/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
