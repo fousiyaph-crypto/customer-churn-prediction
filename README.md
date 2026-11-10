@@ -1,109 +1,72 @@
-# Customer Churn Prediction
-
-A Machine Learning project that predicts customer churn using Logistic Regression and presents customer risk insights through an interactive Streamlit dashboard.
+# Customer Churn Prediction & Analytics Dashboard
 
 ## Project Overview
+An end-to-end Machine Learning project that predicts customer churn using Logistic Regression and provides an interactive analytics dashboard built with Streamlit.
 
-This project aims to identify customers who are likely to leave a service. It includes model evaluation, churn risk analysis, individual customer predictions and an interactive dashboard.
-
-## Technologies Used
-
-- Python
-- Pandas and NumPy
-- Scikit-learn
-- Logistic Regression
-- MLflow
-- Streamlit
-- Matplotlib / data visualization tools
+The project helps businesses identify customers who are likely to leave and understand the factors influencing churn.
 
 ## Key Features
-
-- Customer churn prediction
-- Customer churn risk distribution
-- Individual customer prediction
-- Model performance evaluation
-- Confusion matrix
-- Feature importance analysis
+- Customer churn prediction using Logistic Regression
+- Hyperparameter tuning and threshold optimization
+- Model evaluation using a confusion matrix and classification metrics
+- Customer churn risk analysis
+- Feature importance visualization
 - Interactive Streamlit dashboard
-- MLflow experiment tracking
+- ML experiment tracking using MLflow
+
+## Technology Stack
+- **Programming:** Python
+- **Machine Learning:** Scikit-learn
+- **Data Analysis:** Pandas, NumPy
+- **Visualization:** Matplotlib, Streamlit
+- **Experiment Tracking:** MLflow
+- **Version Control:** Git and GitHub
 
 ## Model Evaluation
-
-Baseline Logistic Regression metrics recorded through MLflow:
-
-| Metric | Result |
-|---|---:|
-| Accuracy | 73.20% |
-| Precision | 74.28% |
-| Recall | 74.28% |
-| F1-score | 74.28% |
-| ROC-AUC | 80.27% |
-
-Threshold-adjusted test evaluation:
-
-| Metric | Result |
-|---|---:|
-| Test customers | 1,000 |
-| Accuracy | 71.80% |
-| True Positives | 430 |
-| True Negatives | 288 |
-| False Positives | 191 |
-| False Negatives | 91 |
-
-*These are separate evaluation results: the baseline MLflow metrics and threshold-adjusted confusion matrix should not be treated as the same model evaluation.*
+The model is evaluated using:
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- ROC-AUC
+- Confusion Matrix
 
 ## Project Structure
-
 ```text
 customer-churn-prediction/
-│
 ├── data/
-│   ├── raw/
-│   └── processed/
-│
 ├── models/
-│
 ├── reports/
-│
 ├── src/
-│   ├── eda.py
-│   ├── preprocessing.py
-│   ├── train.py
-│   └── threshold_tuning.py
-│
 ├── app.py
 ├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
 
-## How to Run
+## Run Locally
 
-1. Clone this repository.
-2. Create and activate a Python virtual environment.
+1. Clone the repository:
+```bash
+git clone https://github.com/fousiyaph-crypto/customer-churn-prediction.git
+```
+
+2. Navigate to the project:
+```bash
+cd customer-churn-prediction
+```
+
 3. Install dependencies:
-
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the Streamlit dashboard:
-
+4. Run the dashboard:
 ```bash
 streamlit run app.py
 ```
 
-## Dashboard
-
-The dashboard provides customer churn KPIs, churn risk distribution, individual customer predictions, confusion matrix and feature importance.
-
-## Future Improvements
-
-- Improve model performance through additional experiments.
-- Add more customer segmentation insights.
-- Deploy the dashboard online.
-- Explore additional classification algorithms.
-
 ## Author
+Fousiya PH
 
-Developed as a Machine Learning and Data Science portfolio project.
+B.Tech Computer Science Engineering | Python | Machine Learning | Data Science
